@@ -26,6 +26,7 @@ You can run tests using the following at the command line:
 
 # History
 
+This code forked from [joestump/python-oauth2](https://github.com/joestump/python-oauth2) and add sha256 support.
 This code was originally forked from [Leah Culver and Andy Smith's oauth.py code](http://github.com/leah/python-oauth/). Some of the tests come from a [fork by Vic Fryzel](http://github.com/shellsage/python-oauth), while a revamped Request class and more tests were merged in from [Mark Paschal's fork](http://github.com/markpasc/python-oauth). A number of notable differences exist between this code and its forefathers:
 
 * 100% unit test coverage.
@@ -34,3 +35,4 @@ This code was originally forked from [Leah Culver and Andy Smith's oauth.py code
 * The <code>Request</code> class now extends from <code>dict</code>.
 * The library is likely no longer compatible with Python 2.3.
 * The <code>Client</code> class works and extends from <code>httplib2</code>. It's a thin wrapper that handles automatically signing any normal HTTP request you might wish to make.
+* Support sha1 and sha256
